@@ -1,0 +1,359 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: grid;
+  grid: auto-flow min-content / 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "sideNav"
+    "main"
+    "footer";
+  grid-gap: 0.2em;
+  margin: 1em;
+}
+
+/* Header Grid*/
+.header {
+  background-color: white;
+  display: grid;
+  grid: auto-flow min-content / 1fr 1fr;
+  padding: 10px;
+  align-items: center;
+}
+
+.sideNav{
+  grid-area: sideNav;
+}
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+.logo {
+  display: grid;
+  grid-auto-flow: column;
+  grid: auto-flow min-content / repeat (2, 1fr);
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  grid-gap: 0.5em;
+}
+.logo1 {
+  display: grid;
+}
+.logo1 > h2,
+h4 {
+  margin: 0%;
+  justify-self: end;
+  color: #9acd32;
+}
+.logo1 > p {
+  justify-self: center;
+}
+#call {
+  display: none;
+}
+.num {
+  display: none;
+}
+.az {
+  display: none;
+}
+
+/* Nav Grid */
+
+/*Main Grid*/
+.latest {
+  display: grid;
+  justify-items: center;
+}
+.logos {
+  display: grid;
+  grid-auto-flow: column;
+  grid: 1em / repeat (4, 1fr);
+  background-color: #f8f8ff;
+  margin: 10px 0;
+  justify-items: center;
+}
+.cardgrid1 {
+  display: grid;
+  grid-auto-flow: column;
+  grid: auto-flow min-content / 1fr 1fr;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 320px) {
+  .cardgrid1 {
+    grid-auto-flow: row;
+    grid: auto-flow min-content / 1fr;
+  }
+}
+.appointment {
+  display: grid;
+  grid-gap: 1em;
+  justify-items: center;
+}
+.appoint {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid: min-content / 6em 1fr;
+}
+.appoint .img {
+  grid-column: 1 / 2;
+}
+.appoint > .appo {
+  grid-column: 2/3;
+}
+
+/*Footer Grid*/
+footer {
+  display: grid;
+  grid: autoflow max-content / 1fr 1fr;
+  justify-items: center;
+  align-self: center;
+  grid-gap: 1em;
+}
+.foot {
+  display: grid;
+  grid: autoflow min-content / repeat (12, 1fr);
+  grid-gap: 0.5em;
+  padding-left: 0;
+}
+.i1,
+  .i3,
+  .i5 {
+   grid-column: 1 / 4;
+  }
+.i2,
+  .i4,
+  .i6 {
+    grid-column: 4 / 13;
+  }
+.btm {
+  display: grid;
+  justify-items: center;
+  margin: 0 5px;
+}
+.email{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/*Medium Grid*/
+@media only screen and (min-width: 768px) {
+  .cardgrid1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 10em;
+  }
+  .cardGrid {
+    display: grid;
+    grid: auto-flow min-content / 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+  .sideNav{display: none;}
+  #hamburgerBtn {
+    display: none;
+  }
+  nav ul {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  nav li {
+    justify-self: center;
+  }
+  nav > ul > li > a {
+    color: black;
+  }
+  nav a:hover{
+    color: white;
+  }
+  nav {
+    background-color: white;
+  }
+  nav > ul > li.active1 {
+    text-decoration: underline;
+  }
+  .ora{color: orange;}
+  .locate {
+    display: block;
+  }
+  .header {
+    grid: auto-flow min-content / 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+}
+@media only screen and (min-width: 570px) {
+  .carousel {
+    display: block;
+  }
+  .hero {
+    display: none;
+  }
+  .i1,
+  .i4{
+    grid-column: 1 / 5;
+  }
+  .i2,
+  .i5 {
+    grid-column: 5 / 9;
+  }
+  .i3, .i6{
+  grid-column: 9/13;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .header {
+    grid: auto-flow min-content / 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+  }
+  #call {
+    display: block;
+  }
+  .num {
+    display: block;
+  }
+  .az {
+    display: block;
+    width: 30%;
+  }
+  nav ul {
+    margin-left: 12em;
+  }
+  .cardGrid {
+    display: grid;
+    grid: auto-flow min-content / repeat(4, 1fr);
+    grid-gap: 2em;
+    margin: 20px;
+  }
+  .latest > div > button {
+    padding: 20px 50px;
+    margin-bottom: 40px;
+  }
+  .latest {
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+  #font {
+    font-size: xx-large;
+  }
+  .btm {
+    display: grid;
+    grid-auto-flow: column;
+    grid: auto-flow min-content / 50% 50%;
+    justify-items: center;
+    margin: 0 5px;
+  }
+  .logo {
+    grid-column: 1/2;
+    grid-gap: 2em;
+    align-content: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .foot {
+    grid-column: 2/3;
+    grid-gap: 2em;
+  }
+  .icon {
+    grid-column: 1/2;
+    justify-self: end;
+  }
+  .get {
+    font-size: x-large;
+  }
+
+  .email {
+    padding: 0.2em;
+    width: 70%;
+  }
+  .email > button {
+    padding: 1em 3em;
+  }
+  .email > input[type="email"] {
+    width: 60%;
+    margin: 1px 0;
+    padding: 30px;
+  }
+  .appoint {
+    grid: min-content / 6em 1fr 1fr;
+  }
+  .appointment {
+    position: relative;
+    justify-items: start;
+  }
+  .open-button {
+    display: none;
+  }
+  .fro {
+    display: none;
+  }
+  .overlay {
+    display: block;
+    width: 30%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  .form-container {
+    color: black;
+  }
+  .form-container .btn {
+    background-color: orange;
+  }
+  .here {
+    width: 90%;
+  }
+  .log {
+    display: grid;
+    grid-auto-flow: column;
+    grid: auto-flow min-content / 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    grid-gap: 0.5em;
+    margin-top: 20px;
+  }
+  .fa{display: none;}
+  .log1 {
+    display: grid;
+    margin-left: 30px;
+  }
+  .log1 > h2,
+  h4 {
+    margin: 0%;
+    justify-self: end;
+    color: #9acd32;
+  }
+  .log1 > p {
+    justify-self: center;
+  }
+  .i1,
+  .i3,
+  .i5 {
+   grid-column: 1 / 4;
+  }
+  .i2,
+  .i4,
+  .i6 {
+    grid-column: 4 / 13;
+  }
+}
