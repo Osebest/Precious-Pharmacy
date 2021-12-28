@@ -20,8 +20,9 @@ body {
   background-color: white;
   display: grid;
   grid: auto-flow min-content / 1fr 1fr;
-  padding: 10px;
   align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .sideNav{
@@ -47,20 +48,12 @@ footer {
   margin: 0;
   padding: 0;
   align-items: center;
-  grid-gap: 0.5em;
+  grid-gap: 0.1em;
 }
-.logo1 {
-  display: grid;
+.logo1 img{
+  width: 100%;
 }
-.logo1 > h2,
-h4 {
-  margin: 0%;
-  justify-self: end;
-  color: #9acd32;
-}
-.logo1 > p {
-  justify-self: center;
-}
+
 #call {
   display: none;
 }
@@ -154,6 +147,10 @@ footer {
 
 /*Medium Grid*/
 @media only screen and (min-width: 768px) {
+  .header{
+    padding-left: 4em;
+    padding-right: 4em;
+  }
   .cardgrid1 {
     display: flex;
     width: 100%;
@@ -172,18 +169,24 @@ footer {
   #hamburgerBtn {
     display: none;
   }
-  nav ul {
-    display: grid;
-    grid-auto-flow: column;
+  nav .nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    
   }
-  nav li {
-    justify-self: center;
+  .nav li {
+    padding-right: 30px;
   }
   nav > ul > li > a {
     color: black;
   }
   nav a:hover{
-    color: white;
+    color: #F07C00;
+    text-decoration: underline;
+  }
+  nav>ul>li:hover{
+    background-color: white;
   }
   nav {
     background-color: white;
@@ -191,7 +194,7 @@ footer {
   nav > ul > li.active1 {
     text-decoration: underline;
   }
-  .ora{color: orange;}
+  .ora{color: #F07C00;}
   .locate {
     display: block;
   }
@@ -221,8 +224,12 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   .header {
-    grid: auto-flow min-content / 1fr 1fr 1fr 1fr;
+    grid: auto-flow min-content / 2fr 1fr 1fr 1fr;
     grid-gap: 2em;
+    padding-left: 10em;
+  }
+  .nav li {
+    padding-right: 40px;
   }
   #call {
     display: block;
@@ -233,9 +240,6 @@ footer {
   .az {
     display: block;
     width: 30%;
-  }
-  nav ul {
-    margin-left: 12em;
   }
   .cardGrid {
     display: grid;
@@ -260,13 +264,6 @@ footer {
     grid: auto-flow min-content / 50% 50%;
     justify-items: center;
     margin: 0 5px;
-  }
-  .logo {
-    grid-column: 1/2;
-    grid-gap: 2em;
-    align-content: flex-start;
-    margin-top: 20px;
-    margin-left: 20px;
   }
   .foot {
     grid-column: 2/3;

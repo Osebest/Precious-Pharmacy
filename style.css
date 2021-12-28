@@ -1,9 +1,9 @@
 body {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  background-color: #f8f8ff;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  background-color:#EFEFEF;
 }
 #font {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  font-family: "El Messiri", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif, sans-serif;
 }
 header,
@@ -17,7 +17,7 @@ input[type="text"] {
   width: 100%;
   border: 0;
   border-radius: 25px;
-  background-color: #f8f8ff;
+  background-color: #EFEFEF;
   margin: 8px 0;
   outline: none;
   padding: 8px;
@@ -27,6 +27,15 @@ input[type="text"] {
 input[type="text"]:focus {
   border-color: dodgerBlue;
   box-shadow: 0 0 8px 0 dodgerBlue;
+}
+.az select{
+  width: 4.5em;
+  border: 0;
+  border-radius: 20px;
+  background-color: #EFEFEF;
+  outline: none;
+  margin: 8px 0;
+  padding: 8px;
 }
 .search input[type="text"] {
   padding-left: 50px;
@@ -39,7 +48,7 @@ input[type="text"]:focus {
   left: 0;
   top: 8px;
   color: gray;
-  padding: 9px 8px;
+  padding: 9px 10px;
   transition: 0.3s;
 }
 .search input[type="text"]:focus + i {

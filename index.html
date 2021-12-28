@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Lato:wght@300;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600;700&family=Lato&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="grid.css" type="text/css">
   <title>Demo</title>
@@ -15,21 +14,26 @@
   <header class="header">
     <div class="logo">
       <div class='logo1'>
-        <h2>PRECIOUS</h2>
-        <h4>PHARMACY</h4>
+        <img src="./logo/Precious_logo_ 1 (1).png" alt="logo">
       </div>
-      <h1 style="color: #f8f8ff;">|</h1>
-      <i id="call" class="fas fa-phone">+23408156466658</i>
+      <h1 style="color: #efefef;">|</h1>
+      <div id="call">
+        <i><img src="./logo/Vector (14).png" alt=""></i>
+        <a href="tel:+2349156466658" style="color: black;">+2348156466658</a>
+      </div>
+    </div>
+    <div class="search locate">
+      <input type="text" placeholder="Location">
+      <i class="fas fa-map-marker-alt"></i>
     </div>
     <div class="search">
       <input type="text" name="search" placeholder="Search..">
       <i class="fas fa-search" aria-hidden="true"></i>
     </div>
-    <div class="search locate">
-      <input type="text" placeholder="Location">
-    </div>
     <div class="az">
-      <input type="text" placeholder="AZ &#9660;">
+      <select name="select" id="">
+        <option value="">AZ</option>
+      </select>
     </div>
   </header>
   <nav id="primaryNav1">
@@ -38,7 +42,7 @@
       <div class="bar2"></div>
       <div class="bar3"></div> 
     </div>
-    <ul>
+    <ul class="nav">
       <li class="active1"><a href="#" class="ora">HOMEPAGE</a></li>
       <li><a href="#" class="about">ABOUT US</a></li>
       <li><a href="#">SERVICES</a></li>
@@ -47,7 +51,7 @@
     </ul>
     <aside id="primaryNav">
       <div class="navbar">
-        <a href="#">HOMEPAGE</a>
+        <a href="#">HOMEPAGE </a>
         <a href="#">ABOUT US</a>
         <a href="#">SERVICES</a>
         <a href="#">PHARMACIES</a>
@@ -61,7 +65,7 @@
         <div class="mySlides fade">
           <img src="images/image1.jpg" style="width:100%">
           <div class="text">
-            <h1>Improviing health, Improving Life.</h1>
+            <h1 id="font">Improviing health, Improving Life.</h1>
             <p>We're pushing boundaries of science and hope the expectation that the medicine
               and vaccines we prescribe will lead better health for society for generation to come.
             </p>
@@ -70,7 +74,7 @@
         <div class="mySlides fade">
           <img src="images/image2.jpg" style="width:100%">
           <div class="text">
-            <h1>Improviing health, Improving Life.</h1>
+            <h1 id="font">Improviing health, Improving Life.</h1>
             <p>We're pushing boundaries of science and hope the expectation that the medicine
               and vaccines we prescribe will lead better health for society for generation to come.
             </p>
