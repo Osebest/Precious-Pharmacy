@@ -1,3 +1,4 @@
+/*Body Styles*/
 body {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   background-color:#EFEFEF;
@@ -5,6 +6,7 @@ body {
 #font {
   font-family: "El Messiri", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif, sans-serif;
+    font-weight: 600;
 }
 header,
 footer,
@@ -13,6 +15,7 @@ main {
   overflow: auto;
 }
 
+/*Header Styles*/
 input[type="text"] {
   width: 100%;
   border: 0;
@@ -58,6 +61,8 @@ input[type="text"]:focus {
   display: none;
 }
 
+
+/*Navigation Styles*/
 nav {
   background-color: #a9d125;
   width: 100%;
@@ -126,14 +131,14 @@ aside{
 }
 
 
-
+/*Main Styles*/
 main {
   margin: 0;
   padding: 0;
 }
 .hero {
   height: 236px;
-  background-image: url("images/image1.jpg");
+  background-image: url("images/image6.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 0;
@@ -141,17 +146,18 @@ main {
   color: white;
 }
 .hero > div > h5 {
-  margin-bottom: 0%;
+  margin-bottom: 5px;
 }
 .hero > div > p {
   padding: 0%;
   margin: 0%;
+  width: 60%;
 }
 .hero1 {
-  background-color: rgba(75, 70, 70, 0.5);
+  margin-top: 50px;
+  margin-left: 20px;
   width: 50%;
-  border-radius: 10px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .carousel {
   display: none;
@@ -198,16 +204,16 @@ img {
 }
 
 .text {
-  color: #f2f2f2;
-  font-size: large;
+  color: white;
   padding: 30px 70px;
   position: absolute;
-  top: 0;
+  top: 100px;
   width: 40%;
-  background-color: rgba(124, 117, 117, 0.2);
-  border-radius: 25px;
   margin: 30px;
-  margin-top: 100px;
+}
+.text h1, p {
+  margin: 0;
+  padding: 0;
 }
 
 .dot {
@@ -262,32 +268,38 @@ img {
 .card2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 100%;
   border-radius: 15px;
   margin-bottom: 20px;
   height: 25em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 .card2:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .card2 img {
   border-radius: 15px 15px 0 0;
-  height: 60%;
+  height: 65%;
 }
 .container {
   padding: 2px 16px;
 }
 .container a {
-  color: orange;
+  color: rgba(240, 124, 0, 1);
 }
 .container > h3,
 p {
   padding: 0;
   margin: 10px;
 }
+.latest{
+  background-color: white;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
 .latest > div > button {
   color: white;
-  background-color: orange;
+  background-color: rgba(240, 124, 0, 1);
   border: none;
   padding: 15px;
   margin: 10px 0;
@@ -300,13 +312,14 @@ p {
   justify-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 0.5rem;
 }
 .card img {
-  padding-top: 20px;
-  padding-bottom: 0;
-  margin: 0;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  border-radius: 20px;
 }
 .card h5 {
   padding: 0;
@@ -314,15 +327,27 @@ p {
   font-family: "Lato";
 }
 .appointment {
-  background-color: #a9d125;
+  background-color: rgba(177, 201, 0, 1);
   color: white;
   padding-left: 20px;
   padding-bottom: 20px;
 }
-.appointment img {
-  width: 80px;
-  height: 80px;
+.doc{
+  background-color: rgba(240, 124, 0, 0.6);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.white {
+  background-color: white;
+  width: 100%;
+  height: 2em;
+  color: white;
+}
+
 .appointment > p {
   padding: 0;
   margin: 0;
@@ -330,13 +355,23 @@ p {
 .appointment > h2 {
   margin-bottom: 0;
 }
-.appo > h3,
+.appo > h4,
 p {
   margin: 0;
   padding: 0;
+  margin-right: 10px;
+}
+.appo h4{
+  font-size: 18px;
+}
+.appo p{
+  font-size: 18px;
+}
+.here{
+  font-size: 20px;
 }
 .open-button {
-  background-color: orange;
+  background-color: rgba(240, 124, 0, 1);
   color: white;
   padding: 16px 40px;
   border: none;
@@ -379,7 +414,7 @@ p {
   outline: none;
 }
 .form-container .btn {
-  background-color: #a9d125;
+  background-color: rgba(177, 201, 0, 1);
   color: white;
   padding: 16px 20px;
   border: none;
@@ -389,7 +424,7 @@ p {
   opacity: 0.8;
 }
 .form-container .cancel {
-  background-color: orange;
+  background-color: rgba(240, 124, 0, 1);
 }
 .form-container .btn:hover,
 .open-button:hover {
@@ -397,6 +432,7 @@ p {
 }
 
 
+/*Footer Styles*/
 footer {
   background-color: black;
   color: white;
@@ -412,17 +448,18 @@ a:link {
 .email {
   background-color: white;
   padding: 0.2em;
-  width: fit-content;
+  width: 80%;
 }
 .email > button {
-  padding: 5px;
-  background-color: orange;
+  background-color: rgba(240, 124, 0, 1);
   border: 0;
   color: white;
+  padding: 1em 1em;
 }
 .email > input[type="email"] {
-  width: 60%;
+  width: 50%;
   border: 0;
+  padding: 20px;
 }
 .icon i {
   padding: 10px;
@@ -431,8 +468,14 @@ a:link {
 .get {
   margin-left: 20px;
 }
-.sub > h2 {
+.get {
+  font-size: 12px;
+}
+.sub > h3 {
   padding: 0%;
   margin-bottom: 0%;
 }
 .log{display: none;}
+.fa {
+  text-align: center;
+}

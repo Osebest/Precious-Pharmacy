@@ -1,3 +1,4 @@
+/*Body Grid*/
 html,
 body {
   height: 100%;
@@ -14,17 +15,6 @@ body {
   grid-gap: 0.2em;
   margin: 1em;
 }
-
-/* Header Grid*/
-.header {
-  background-color: white;
-  display: grid;
-  grid: auto-flow min-content / 1fr 1fr;
-  align-items: center;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
 .sideNav{
   grid-area: sideNav;
 }
@@ -41,6 +31,15 @@ footer {
   grid-area: footer;
 }
 
+/* Header Grid*/
+.header {
+  background-color: white;
+  display: grid;
+  grid: auto-flow min-content / 1fr 1fr;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
 .logo {
   display: grid;
   grid-auto-flow: column;
@@ -66,19 +65,27 @@ footer {
 
 /* Nav Grid */
 
+
 /*Main Grid*/
 .latest {
   display: grid;
   justify-items: center;
 }
 .logos {
-  display: grid;
-  grid-auto-flow: column;
-  grid: 1em / repeat (4, 1fr);
-  background-color: #f8f8ff;
-  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
   justify-items: center;
 }
+.lgs {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .cardgrid1 {
   display: grid;
   grid-auto-flow: column;
@@ -109,6 +116,7 @@ footer {
   grid-column: 2/3;
 }
 
+
 /*Footer Grid*/
 footer {
   display: grid;
@@ -120,18 +128,19 @@ footer {
 .foot {
   display: grid;
   grid: autoflow min-content / repeat (12, 1fr);
-  grid-gap: 0.5em;
+  grid-gap: 1.5em;
   padding-left: 0;
+  
 }
 .i1,
   .i3,
   .i5 {
-   grid-column: 1 / 4;
+   grid-column: 1 / 7;
   }
 .i2,
   .i4,
   .i6 {
-    grid-column: 4 / 13;
+    grid-column: 7 / 13;
   }
 .btm {
   display: grid;
@@ -163,6 +172,8 @@ footer {
     display: grid;
     grid: auto-flow min-content / 1fr 1fr;
     grid-gap: 1em;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .sideNav{display: none;}
@@ -220,8 +231,13 @@ footer {
   }
   .i3, .i6{
   grid-column: 9/13;
+  }
+  .email {
+    width: 70%;
+  }
 }
-}
+
+/*Desktop Grid*/
 @media only screen and (min-width: 1024px) {
   .header {
     grid: auto-flow min-content / 2fr 1fr 1fr 1fr;
@@ -242,18 +258,20 @@ footer {
     width: 30%;
   }
   .cardGrid {
-    display: grid;
-    grid: auto-flow min-content / repeat(4, 1fr);
-    grid-gap: 2em;
-    margin: 20px;
+    display: flex;
+    margin: 20px 40px;
+  }
+  .card2{
+    height: 25em;
+    margin-right: .5em;
+    margin-left: .5em;
+  }
+  .card2 img {
+    height: 60%;
   }
   .latest > div > button {
     padding: 20px 50px;
     margin-bottom: 40px;
-  }
-  .latest {
-    margin-bottom: 50px;
-    margin-top: 40px;
   }
   #font {
     font-size: xx-large;
@@ -272,29 +290,37 @@ footer {
   .icon {
     grid-column: 1/2;
     justify-self: end;
+    margin-top: 0;
   }
   .get {
-    font-size: x-large;
+    font-size: 20px;
   }
 
   .email {
     padding: 0.2em;
-    width: 70%;
+    width: 65%;
   }
   .email > button {
-    padding: 1em 3em;
+    padding: 2em 4em;
   }
   .email > input[type="email"] {
     width: 60%;
-    margin: 1px 0;
-    padding: 30px;
+    padding: 20px;
   }
   .appoint {
     grid: min-content / 6em 1fr 1fr;
   }
   .appointment {
-    position: relative;
     justify-items: start;
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+  }
+  .ment{
+    position: relative;
+  }
+  .here{
+    font-size: 20px;
+    max-width: 60%;
   }
   .open-button {
     display: none;
@@ -307,14 +333,14 @@ footer {
     width: 30%;
     background-color: white;
     position: absolute;
-    top: 0;
+    top: -10px;
     right: 20px;
   }
   .form-container {
     color: black;
   }
   .form-container .btn {
-    background-color: orange;
+    background-color: rgba(240, 124, 0, 1);
   }
   .here {
     width: 90%;
@@ -323,26 +349,14 @@ footer {
     display: grid;
     grid-auto-flow: column;
     grid: auto-flow min-content / 1fr 1fr;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    grid-gap: 0.5em;
+    align-items: flex-start;
+    justify-items: center;
+    grid-gap: 1em;
     margin-top: 20px;
+    padding-left: 60px;
   }
   .fa{display: none;}
-  .log1 {
-    display: grid;
-    margin-left: 30px;
-  }
-  .log1 > h2,
-  h4 {
-    margin: 0%;
-    justify-self: end;
-    color: #9acd32;
-  }
-  .log1 > p {
-    justify-self: center;
-  }
+
   .i1,
   .i3,
   .i5 {
